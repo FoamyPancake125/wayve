@@ -15,14 +15,17 @@ export default function AppLayout() {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-50 bg-card/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-border shadow-sm">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <NavLink to="/" className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <Waves className="w-4 h-4 text-primary-foreground" strokeWidth={2.5} />
+            <NavLink to="/" className="flex items-center gap-2.5 group">
+              <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-sm group-hover:opacity-90 transition-opacity">
+                <Waves className="w-4.5 h-4.5 text-primary-foreground" strokeWidth={2.5} />
               </div>
-              <span className="font-display text-xl font-bold tracking-tight text-foreground">Wayve</span>
+              <div>
+                <span className="font-display text-xl font-bold tracking-tight text-foreground">Wayve</span>
+                <span className="hidden sm:inline text-xs text-muted-foreground ml-2 font-medium">AI Parking &amp; Mobility</span>
+              </div>
             </NavLink>
 
             <nav className="hidden md:flex items-center gap-1">
@@ -32,9 +35,9 @@ export default function AppLayout() {
                   <NavLink
                     key={item.path}
                     to={item.path}
-                    className={`flex items-center gap-2 px-3.5 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all ${
                       isActive
-                        ? 'bg-primary text-primary-foreground'
+                        ? 'bg-primary text-primary-foreground shadow-sm'
                         : 'text-muted-foreground hover:text-foreground hover:bg-secondary'
                     }`}
                   >
@@ -46,7 +49,7 @@ export default function AppLayout() {
             </nav>
 
             <button
-              className="md:hidden p-2 rounded-lg hover:bg-secondary transition-colors"
+              className="md:hidden p-2.5 rounded-xl hover:bg-secondary transition-colors"
               onClick={() => setMobileOpen(!mobileOpen)}
             >
               {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -55,8 +58,8 @@ export default function AppLayout() {
         </div>
 
         {mobileOpen && (
-          <div className="md:hidden border-t border-border bg-card">
-            <nav className="px-4 py-3 space-y-1">
+          <div className="md:hidden border-t border-border bg-white">
+            <nav className="max-w-6xl mx-auto px-4 py-3 space-y-1">
               {NAV_ITEMS.map(item => {
                 const isActive = location.pathname === item.path
                 return (
@@ -64,7 +67,7 @@ export default function AppLayout() {
                     key={item.path}
                     to={item.path}
                     onClick={() => setMobileOpen(false)}
-                    className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-colors ${
                       isActive
                         ? 'bg-primary text-primary-foreground'
                         : 'text-muted-foreground hover:text-foreground hover:bg-secondary'
@@ -80,7 +83,7 @@ export default function AppLayout() {
         )}
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <Outlet />
       </main>
     </div>
