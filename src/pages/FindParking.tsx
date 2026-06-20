@@ -34,7 +34,7 @@ const BERKELEY_OPTIONS: ParkingOption[] = [
     costBreakdown: ['$3/hr × 2 hrs = $6.00', 'Daily max cap: $18.00', 'Free with valid blue permit after 5pm'],
     walkingRoute: 'Exit via Hearst Ave ramp → signaled crosswalk → 4-min walk south to Sather Gate',
     risks: ['Heavy traffic during class changes (9am, 11am, 1pm)', 'Limited spots Tue/Thu 9–11am due to large lectures'],
-    backupOption: 'RSF Garage (0.3 mi) — typically 30+ spots open, EV charging on Level 1',
+    backupOption: 'RSF Garage (0.3 mi), typically 30+ spots open, EV charging on Level 1',
   },
   {
     id: 2, name: 'RSF Garage', type: 'Garage',
@@ -48,7 +48,7 @@ const BERKELEY_OPTIONS: ParkingOption[] = [
     costBreakdown: ['$2/hr visitor rate', 'Student permit holders: Free 7am–5pm', 'EV charging: +$0.25/kWh'],
     walkingRoute: 'Exit south → Bancroft Way → north on Telegraph Ave → 6-min to Sproul Plaza',
     risks: ['Gym event nights fill Level 1 quickly after 5pm', 'Permit enforcement strictly Mon–Fri'],
-    backupOption: 'Bancroft Structure (0.1 mi south) — no EV charging but similar pricing',
+    backupOption: 'Bancroft Structure (0.1 mi south), no EV charging but similar pricing',
   },
   {
     id: 3, name: 'Stadium Parking Garage', type: 'Garage',
@@ -56,13 +56,13 @@ const BERKELEY_OPTIONS: ParkingOption[] = [
     priceLabel: '$4/hr ($25 on game days)', priceHr: 4, availability: 'high', confidence: 78,
     accessible: true, evCharging: false, wellLit: true, covered: true,
     bestFor: ['Event Parking', 'Largest Capacity'],
-    permitRequired: 'None — public pay parking',
+    permitRequired: 'None, public pay parking',
     recommendation: 'Largest parking structure on the east side of campus. Best choice for Cal games, concerts, and large events when other garages fill quickly.',
     predictedAvail: [{ time: 'Now', pct: 80 }, { time: '+30m', pct: 75 }, { time: '+1hr', pct: 68 }, { time: '+2hr', pct: 55 }],
     costBreakdown: ['$4/hr standard rate', 'Event flat rate: $25 (cash or ParkMobile)', 'Daily max: $32'],
     walkingRoute: 'Exit via Gayley Rd → Stadium Rim Way → 8-min walk west to Campanile Way',
     risks: ['Prices surge 3× on Cal football game days', 'Road closures on Piedmont Ave during major events'],
-    backupOption: 'Underhill Parking Garage (0.2 mi) — quieter, $2.50/hr',
+    backupOption: 'Underhill Parking Garage (0.2 mi), quieter, $2.50/hr',
   },
   {
     id: 4, name: 'Underhill Parking Garage', type: 'Garage',
@@ -76,7 +76,7 @@ const BERKELEY_OPTIONS: ParkingOption[] = [
     costBreakdown: ['$2.50/hr × 3 hrs = $7.50', 'Daily max: $20', 'Evening rate after 5pm: $1.50/hr'],
     walkingRoute: 'Exit east on Channing Way → north on College Ave → 10-min to campus via Durant Gate',
     risks: ['Street closures possible during large campus events', '1st Monday monthly maintenance 8–10am'],
-    backupOption: 'Street parking on Durant Ave (0.1 mi) — cheaper but 2-hr limit',
+    backupOption: 'Street parking on Durant Ave (0.1 mi), cheaper but 2-hr limit',
   },
   {
     id: 5, name: 'Bancroft Structure', type: 'Garage',
@@ -85,12 +85,12 @@ const BERKELEY_OPTIONS: ParkingOption[] = [
     accessible: false, evCharging: false, wellLit: true, covered: true,
     bestFor: ['South Campus Access'],
     permitRequired: 'Visitor pay-to-park; Level 1 permit-only',
-    recommendation: 'Convenient for appointments at Haas School of Business, Sproul Hall, or the south entrance. Avoid Level 1 — it is permit-only.',
+    recommendation: 'Convenient for appointments at Haas School of Business, Sproul Hall, or the south entrance. Avoid Level 1, it is permit-only.',
     predictedAvail: [{ time: 'Now', pct: 48 }, { time: '+30m', pct: 44 }, { time: '+1hr', pct: 40 }, { time: '+2hr', pct: 52 }],
-    costBreakdown: ['$3.50/hr visitor rate', 'Daily max: $22', 'No ADA spaces — use Lower Hearst instead'],
+    costBreakdown: ['$3.50/hr visitor rate', 'Daily max: $22', 'No ADA spaces, use Lower Hearst instead'],
     walkingRoute: 'Exit on Bancroft Way → east 1 block → through Telegraph Plaza → 6-min to Sproul Hall',
     risks: ['Fills fast on Sproul protest or rally days', 'Level 1 permit enforcement is very strict'],
-    backupOption: 'Lower Hearst Structure (0.1 mi) — ADA accessible, slightly cheaper',
+    backupOption: 'Lower Hearst Structure (0.1 mi), ADA accessible, slightly cheaper',
   },
   {
     id: 6, name: 'Telegraph/Channing Garage', type: 'Garage',
@@ -98,13 +98,13 @@ const BERKELEY_OPTIONS: ParkingOption[] = [
     priceLabel: '$2/hr', priceHr: 2, availability: 'high', confidence: 88,
     accessible: false, evCharging: false, wellLit: true, covered: true,
     bestFor: ['Cheapest Garage', 'Longer Stays'],
-    permitRequired: 'None — public pay garage',
+    permitRequired: 'None, public pay garage',
     recommendation: 'Most affordable covered garage near the Telegraph corridor. Great for longer visits to south campus, bookstores, and cafes.',
     predictedAvail: [{ time: 'Now', pct: 72 }, { time: '+30m', pct: 68 }, { time: '+1hr', pct: 62 }, { time: '+2hr', pct: 74 }],
     costBreakdown: ['$2/hr × 3 hrs = $6.00', 'Daily max: $14', 'No hourly minimum charge'],
     walkingRoute: 'Exit on Channing Way → north on Telegraph Ave → 12-min walk to Sather Gate',
-    risks: ['Weekend closures possible for Telegraph Ave street fairs — check calendar'],
-    backupOption: 'RSF Garage (0.3 mi north) — $2/hr with EV charging, closer to campus core',
+    risks: ['Weekend closures possible for Telegraph Ave street fairs, check calendar'],
+    backupOption: 'RSF Garage (0.3 mi north), $2/hr with EV charging, closer to campus core',
   },
   {
     id: 7, name: 'Downtown Berkeley BART Garage', type: 'Garage',
@@ -112,12 +112,12 @@ const BERKELEY_OPTIONS: ParkingOption[] = [
     priceLabel: '$2/hr (1st hr free w/ BART)', priceHr: 2, availability: 'high', confidence: 93,
     accessible: true, evCharging: true, wellLit: true, covered: true,
     bestFor: ['Most Reliable', 'Transit Hub', 'EV Charging'],
-    permitRequired: 'None — public BART parking',
-    recommendation: 'Highest confidence rating due to massive capacity — this garage almost never fills. BART validation gives the first hour free. Perfect when you need a guaranteed spot.',
+    permitRequired: 'None, public BART parking',
+    recommendation: 'Highest confidence rating due to massive capacity, this garage almost never fills. BART validation gives the first hour free. Perfect when you need a guaranteed spot.',
     predictedAvail: [{ time: 'Now', pct: 79 }, { time: '+30m', pct: 75 }, { time: '+1hr', pct: 70 }, { time: '+2hr', pct: 80 }],
     costBreakdown: ['First hour free with BART validation', '$2/hr thereafter', 'Daily max: $16', 'EV charging: +$0.20/kWh'],
     walkingRoute: 'Exit on Center St → east on University Ave → 16-min walk to Sather Gate; or AC Transit 51B (5-min ride)',
-    risks: ['Rare overflow on Cal football game days — otherwise consistently available year-round'],
+    risks: ['Rare overflow on Cal football game days, otherwise consistently available year-round'],
     backupOption: 'Free street parking on Shattuck Ave available after 6pm and on Sundays',
   },
   {
@@ -126,13 +126,13 @@ const BERKELEY_OPTIONS: ParkingOption[] = [
     priceLabel: '$1.25/hr (2-hr max)', priceHr: 1.25, availability: 'low', confidence: 62,
     accessible: false, evCharging: false, wellLit: true, covered: false,
     bestFor: ['Cheapest Option', 'Quick Stops'],
-    permitRequired: 'None — metered public street parking',
+    permitRequired: 'None, metered public street parking',
     recommendation: 'Cheapest option if you can snag a spot. The 2-hour meter limit makes it best for short errands. Spots turn over frequently near the Ave corridor.',
     predictedAvail: [{ time: 'Now', pct: 17 }, { time: '+30m', pct: 22 }, { time: '+1hr', pct: 28 }, { time: '+2hr', pct: 33 }],
     costBreakdown: ['$1.25/hr × 2 hrs = $2.50 maximum', '2-hour limit enforced 9am–6pm Mon–Sat', 'Free evenings after 6pm and all day Sunday'],
     walkingRoute: 'Park anywhere on Durant between Telegraph and Bowditch → 4-min walk north to Sather Gate',
-    risks: ['Only 17% chance of an open spot right now', 'Active meter enforcement Mon–Sat 9am–6pm', 'Street cleaning Thursdays 8–10am — $75 citation risk'],
-    backupOption: 'Telegraph/Channing Garage (0.1 mi south) — $2/hr covered, 72% availability',
+    risks: ['Only 17% chance of an open spot right now', 'Active meter enforcement Mon–Sat 9am–6pm', 'Street cleaning Thursdays 8–10am, $75 citation risk'],
+    backupOption: 'Telegraph/Channing Garage (0.1 mi south), $2/hr covered, 72% availability',
   },
   {
     id: 9, name: 'Street Parking – Hearst Ave', type: 'Street',
@@ -140,13 +140,13 @@ const BERKELEY_OPTIONS: ParkingOption[] = [
     priceLabel: '$1.25/hr (2-hr max)', priceHr: 1.25, availability: 'medium', confidence: 70,
     accessible: false, evCharging: false, wellLit: false, covered: false,
     bestFor: ['Closest Street Option'],
-    permitRequired: 'None — metered street parking',
+    permitRequired: 'None, metered street parking',
     recommendation: 'Closest street parking to north campus. Good morning turnover. Not recommended after dark due to limited lighting along this stretch.',
     predictedAvail: [{ time: 'Now', pct: 27 }, { time: '+30m', pct: 31 }, { time: '+1hr', pct: 35 }, { time: '+2hr', pct: 40 }],
     costBreakdown: ['$1.25/hr × 2 hrs = $2.50', 'Free weekends and after 6pm', '2-hour limit Mon–Sat 9am–6pm'],
     walkingRoute: 'Park between Ellsworth and Shattuck → cross at Hearst/Euclid → 3-min to north gate',
-    risks: ['Low lighting — not recommended after dark', 'Street cleaning Mondays 8–10am — $75 citation risk', 'Have a backup plan: moderate availability only'],
-    backupOption: 'Lower Hearst Structure (0.1 mi east) — covered, well-lit, ADA accessible',
+    risks: ['Low lighting, not recommended after dark', 'Street cleaning Mondays 8–10am, $75 citation risk', 'Have a backup plan: moderate availability only'],
+    backupOption: 'Lower Hearst Structure (0.1 mi east), covered, well-lit, ADA accessible',
   },
   {
     id: 10, name: 'Street Parking – College Ave', type: 'Street',
@@ -154,13 +154,13 @@ const BERKELEY_OPTIONS: ParkingOption[] = [
     priceLabel: '$1/hr (no time limit)', priceHr: 1, availability: 'high', confidence: 75,
     accessible: false, evCharging: false, wellLit: true, covered: false,
     bestFor: ['Cheapest Long Stay'],
-    permitRequired: 'None — metered, no time limit enforced',
+    permitRequired: 'None, metered, no time limit enforced',
     recommendation: 'Best street option for stays over 2 hours. No time limit and the lowest hourly rate make this ideal for visitors planning 3–5 hours on campus.',
     predictedAvail: [{ time: 'Now', pct: 63 }, { time: '+30m', pct: 58 }, { time: '+1hr', pct: 54 }, { time: '+2hr', pct: 60 }],
-    costBreakdown: ['$1/hr — no time limit', '$3 for 3 hours vs $10.50 in Bancroft Structure', 'Free Mon–Fri before 9am and after 8pm; free all day Sunday'],
+    costBreakdown: ['$1/hr, no time limit', '$3 for 3 hours vs $10.50 in Bancroft Structure', 'Free Mon–Fri before 9am and after 8pm; free all day Sunday'],
     walkingRoute: 'Park between Ashby and Derby → north on College Ave → 10-min to Durant Gate via Bancroft Way',
-    risks: ['Longer walk — not ideal in rain or for visitors with mobility needs', 'Early morning spots go fast (7–9am)'],
-    backupOption: 'Underhill Parking Garage (0.2 mi west) — covered, reliable, $2.50/hr',
+    risks: ['Longer walk, not ideal in rain or for visitors with mobility needs', 'Early morning spots go fast (7–9am)'],
+    backupOption: 'Underhill Parking Garage (0.2 mi west), covered, reliable, $2.50/hr',
   },
 ]
 
@@ -235,13 +235,13 @@ function getGenericOptions(destination: string): ParkingOption[] {
       priceLabel: `$${3 + (n % 5)}/hr`, priceHr: 3 + (n % 5), availability: 'high', confidence: 88,
       accessible: true, evCharging: false, wellLit: true, covered: true,
       bestFor: ['Closest', 'Most Reliable'],
-      permitRequired: 'Visitor parking available — pay at kiosk',
+      permitRequired: 'Visitor parking available, pay at kiosk',
       recommendation: `Closest covered option to ${name}. Consistent availability and ADA access make it the default recommendation.`,
       predictedAvail: [{ time: 'Now', pct: 65 }, { time: '+30m', pct: 60 }, { time: '+1hr', pct: 58 }, { time: '+2hr', pct: 72 }],
       costBreakdown: [`$${3 + (n % 5)}/hr visitor rate`, 'Daily max cap varies by lot'],
-      walkingRoute: `Exit and follow signs toward ${name} main entrance — approximately 4-min walk`,
+      walkingRoute: `Exit and follow signs toward ${name} main entrance, approximately 4-min walk`,
       risks: ['Busy during peak hours and events'],
-      backupOption: 'Surface lot nearby — lower rate, further walk',
+      backupOption: 'Surface lot nearby, lower rate, further walk',
     },
     {
       id: 2, name: 'Street Parking (Nearest Block)', type: 'Street',
@@ -249,7 +249,7 @@ function getGenericOptions(destination: string): ParkingOption[] {
       priceLabel: `$${1 + (n % 3)}/hr`, priceHr: 1 + (n % 3), availability: 'low', confidence: 58,
       accessible: false, evCharging: false, wellLit: false, covered: false,
       bestFor: ['Cheapest'],
-      permitRequired: 'Metered street parking — check posted signs',
+      permitRequired: 'Metered street parking, check posted signs',
       recommendation: 'Cheapest option if you can get a spot. Low availability means you need a solid backup.',
       predictedAvail: [{ time: 'Now', pct: 20 }, { time: '+30m', pct: 25 }, { time: '+1hr', pct: 30 }, { time: '+2hr', pct: 35 }],
       costBreakdown: [`$${1 + (n % 3)}/hr metered`, 'Check posted signs for time limits'],
@@ -263,12 +263,12 @@ function getGenericOptions(destination: string): ParkingOption[] {
       priceLabel: `$${2 + (n % 4)}/hr`, priceHr: 2 + (n % 4), availability: 'medium', confidence: 76,
       accessible: true, evCharging: false, wellLit: true, covered: false,
       bestFor: ['Good Availability'],
-      permitRequired: 'None — pay-to-park surface lot',
-      recommendation: 'Reliable surface lot with good turnover. Well-lit but no cover — plan for weather.',
+      permitRequired: 'None, pay-to-park surface lot',
+      recommendation: 'Reliable surface lot with good turnover. Well-lit but no cover, plan for weather.',
       predictedAvail: [{ time: 'Now', pct: 50 }, { time: '+30m', pct: 45 }, { time: '+1hr', pct: 55 }, { time: '+2hr', pct: 62 }],
       costBreakdown: [`$${2 + (n % 4)}/hr`, 'No daily maximum'],
       walkingRoute: '6-min walk to main entrance along designated pedestrian path',
-      risks: ['No covered parking — bring an umbrella in poor weather'],
+      risks: ['No covered parking, bring an umbrella in poor weather'],
       backupOption: 'Main garage is the closest covered alternative',
     },
     {
@@ -277,11 +277,11 @@ function getGenericOptions(destination: string): ParkingOption[] {
       priceLabel: `$${3 + (n % 5)}/hr`, priceHr: 3 + (n % 5), availability: 'high', confidence: 83,
       accessible: true, evCharging: true, wellLit: true, covered: true,
       bestFor: ['EV Charging', 'ADA Accessible'],
-      permitRequired: 'None — public garage',
+      permitRequired: 'None, public garage',
       recommendation: 'Further walk but great for EV drivers and anyone needing ADA access.',
       predictedAvail: [{ time: 'Now', pct: 70 }, { time: '+30m', pct: 65 }, { time: '+1hr', pct: 72 }, { time: '+2hr', pct: 78 }],
       costBreakdown: [`$${3 + (n % 5)}/hr`, 'EV charging included in rate'],
-      walkingRoute: '12-min walk via main street — flat, paved route',
+      walkingRoute: '12-min walk via main street, flat, paved route',
       risks: ['Longer walk may not suit time-sensitive arrivals'],
       backupOption: 'Main garage is closer but lacks EV charging',
     },
@@ -394,7 +394,7 @@ export default function FindParking() {
       <div>
         <h1 className="font-display text-3xl font-bold text-foreground tracking-tight">Find Parking</h1>
         <p className="text-muted-foreground mt-1.5 text-base">
-          AI-powered predictions for any destination — check availability, permits, and cost before you go.
+          AI-powered predictions for any destination, check availability, permits, and cost before you go.
         </p>
       </div>
 
@@ -633,7 +633,7 @@ export default function FindParking() {
                         </div>
 
                         <div>
-                          <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wide mb-3">Predicted Availability — Next 2 Hours</h4>
+                          <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wide mb-3">Predicted Availability, Next 2 Hours</h4>
                           <div className="grid grid-cols-4 gap-3">
                             {opt.predictedAvail.map(p => (
                               <div key={p.time} className="text-center">
@@ -683,7 +683,7 @@ export default function FindParking() {
                         )}
 
                         <div className="bg-primary/5 border border-primary/20 rounded-xl p-4">
-                          <h4 className="text-xs font-bold text-primary uppercase tracking-wide mb-1.5">If This Lot Is Full — Backup Option</h4>
+                          <h4 className="text-xs font-bold text-primary uppercase tracking-wide mb-1.5">If This Lot Is Full, Backup Option</h4>
                           <p className="text-sm text-foreground">{opt.backupOption}</p>
                         </div>
 
@@ -767,7 +767,7 @@ export default function FindParking() {
           </div>
           <p className="font-display text-xl font-bold text-foreground mb-2">Ready to find parking?</p>
           <p className="text-sm text-muted-foreground max-w-md mx-auto mb-4">
-            Search any destination — campus, hospital, office, stadium, or city — and get AI-powered parking predictions before you leave.
+            Search any destination, campus, hospital, office, stadium, or city, and get AI-powered parking predictions before you leave.
           </p>
           <button
             onClick={() => setDestination('University of California, Berkeley')}

@@ -309,7 +309,7 @@ export default function Dashboard() {
           />
           <MetricCard
             icon={TrendingUp} label="Best Month" value="$89"
-            subtext="June 2025 — most active month"
+            subtext="June 2025, most active month"
             iconBg="bg-amber-100 text-amber-700"
           />
         </div>

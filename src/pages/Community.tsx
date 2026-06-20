@@ -56,7 +56,7 @@ const SEEDS: Report[] = [
   },
   {
     id: 4, location: 'Telegraph/Channing Garage', report_type: 'leaving_soon',
-    notes: 'Just leaving Level 2 — spot near the stairwell. Should be open in 2 minutes.',
+    notes: 'Just leaving Level 2, spot near the stairwell. Should be open in 2 minutes.',
     upvotes: 34, downvotes: 0, time: '52 min ago', author: 'David P.', credibility: 91,
     verified: true, confirmedBy: 3, confidence: 87, parkingType: 'Garage', spotsAvailable: 1,
   },
@@ -68,13 +68,13 @@ const SEEDS: Report[] = [
   },
   {
     id: 6, location: 'Hearst Ave near Shattuck', report_type: 'street_cleaning',
-    notes: 'Street cleaning just went through — both sides now clear. Free until 6pm tonight.',
+    notes: 'Street cleaning just went through, both sides now clear. Free until 6pm tonight.',
     upvotes: 19, downvotes: 1, time: '1 hr 45 min ago', author: 'Priya M.', credibility: 79,
     verified: false, confirmedBy: 1, confidence: 72, parkingType: 'Street', spotsAvailable: 8,
   },
   {
     id: 7, location: 'Stadium Parking Garage, Gayley Rd', report_type: 'event_traffic',
-    notes: "Cal men's basketball tonight — flat rate $25 starting at 4pm. Already backed up to Piedmont Ave. Go early or use BART.",
+    notes: "Cal men's basketball tonight, flat rate $25 starting at 4pm. Already backed up to Piedmont Ave. Go early or use BART.",
     upvotes: 63, downvotes: 4, time: '2 hrs ago', author: 'Leo B.', credibility: 86,
     verified: true, confirmedBy: 11, confidence: 95, parkingType: 'Garage',
   },
@@ -193,7 +193,7 @@ export default function Community() {
         <div>
           <h1 className="font-display text-3xl font-bold text-foreground tracking-tight">Community Reports</h1>
           <p className="text-muted-foreground mt-1.5 text-base">
-            Real-time updates from Wayve users — help others find spots faster by sharing what you see.
+            Real-time updates from Wayve users, help others find spots faster by sharing what you see.
           </p>
         </div>
         <button
@@ -327,7 +327,7 @@ export default function Community() {
               <textarea
                 value={notes}
                 onChange={e => setNotes(e.target.value)}
-                placeholder="Describe what you see — level, section, specific location, any hazards, useful context..."
+                placeholder="Describe what you see, level, section, specific location, any hazards, useful context..."
                 rows={3}
                 className="w-full bg-background border border-border rounded-xl px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
               />
